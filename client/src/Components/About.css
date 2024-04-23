@@ -1,3 +1,5 @@
+
+
 .aboutHome {
     height: auto;
   }
@@ -11,7 +13,8 @@
     object-fit: cover;
   }
   .aboutHome .right {
-    padding: 80px 50px;
+    padding: 118px 73px;
+    margin-left: 18px;
   }
   .aboutHome .items {
     margin-top: 50px;
@@ -50,4 +53,24 @@
     display: flex;
     margin-left: 120px;
     gap: 220px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+      display: flex;
+      margin-left: 0px;
+      gap: 113px;
+    }
+    .aboutHome .left img {
+      
+      margin-left: -58px;
+  }
+  .container{
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .right {
+    margin-left: -54px;
+    margin-top: -218px;
+  }
   }

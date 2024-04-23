@@ -4,12 +4,12 @@ import { Card } from "flowbite-react";
 const Featured = () => {
   return (
     <div className="bg-white">
-      <div className="container mx-auto mt-20 py-20">
-      <h2 className="text-4xl font-bold text-center mb-12 text-blue-900 relative mt-8">
-          <span className="line-left absolute left-0 h-0.5 w-12 bg-blue-900"></span>
+      <div className="featured-container mx-auto mt-20 py-20 pl-20">
+      <h1 className=" text-teal-500 font-bold md:ml-44 text-center mt-20 text-5xl" style={{marginLeft: "-48px"}}>
+          <span className="line-left absolute left-0  h-0.5 w-12 text-teal-500"></span>
           Featured Courses
           <span className="line-right absolute right-0 h-0.5 w-12 bg-blue-900"></span>
-        </h2>
+        </h1>
         <div className="grid grid-cols-3 gap-8 mt-32">
           {/* First Card */}
           <div className="col-span-3 md:col-span-1">
@@ -31,7 +31,7 @@ const Featured = () => {
                 <p className="text-gray-700">
                   Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
                 </p>
-                <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+                <button className="mt-4 border-2 border-teal-500 text-teal-500  hover:bg-teal-500 hover:text-white  font-semibold py-2 px-4 w-64 h-16">
                   Read more
                 </button>
               </div>
@@ -58,7 +58,7 @@ const Featured = () => {
                 <p className="text-gray-700">
                   Here are the latest business strategies for the year 2021.
                 </p>
-                <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+                <button className="mt-4 border-2 border-teal-500 text-teal-500  hover:bg-teal-500 hover:text-white  font-semibold py-2 px-4 w-64 h-16">
                   Read more
                 </button>
               </div>
@@ -85,7 +85,7 @@ const Featured = () => {
                 <p className="text-gray-700">
                   Explore the latest innovations in education for the year 2021.
                 </p>
-                <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+                <button className="mt-4 border-2 border-teal-500 text-teal-500  hover:bg-teal-500 hover:text-white  font-semibold py-2 px-4 w-64 h-16">
                   Read more
                 </button>
               </div>
