@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CourseList = ({ courses }) => {
   return (
@@ -11,6 +12,7 @@ const CourseList = ({ courses }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-40 m-44 cursor-pointer">
         {courses.map((course) => (
+          <Link to={`/courses/${course.id}`} key={course.id}>
           <div
             key={course.id}
             className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105"
@@ -31,6 +33,7 @@ const CourseList = ({ courses }) => {
               </a>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

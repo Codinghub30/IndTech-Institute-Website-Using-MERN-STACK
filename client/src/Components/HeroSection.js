@@ -5,20 +5,25 @@ import Featured from "./Featured";
 import Speciality from "./Speciality";
 import TopFaq from "./TopFaq";
 import Footer from "./Footer";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "./About.css";
 
-import arrow from "../Pictures/arrow.png"
-import img1 from "../Pictures/slider2.jpg";
+// import arrow from "../Pictures.png"
+import img1 from "../Pictures/wallpaer1.jpg";
+import img2 from "../Pictures/wallpaper.jpg";
+import img3 from "../Pictures/welder.jpg";
+import img4 from "../Pictures/technician.jpg"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
+import { fadeIn } from "../Variant";
 
 import Testimonal from "./Testimonial/Testimonial";
 
-import mainImg from "../Pictures/png1.png.png";
+// import mainImg from "../Pictures/png1.png.png";
+import VisionAndMission from "./VisionAndMission";
 
 const HeroSection = () => {
   const settings = {
@@ -41,60 +46,83 @@ const HeroSection = () => {
             "linear-gradient(to right, #43e97b 0%, #38f9d7 100%)",
         }}
       >
-        <h2 className="heading">
-          {" "}
-          <span>I</span>NDTECH EDUCATION AND TECHNICAL INSTITUTE
-        </h2>
+        <Carousel>
+          <img src={img1} alt="..." />
+          <img src={img2} alt="..." />
+          <img src={img3} alt="..." />
+        </Carousel>
+        {/* <div className="hero-container">
+          <h2 className="heading mt-72">
+            {" "}
+            <span></span>Master The Skill to
+            <br /> Drive Your Career
+          </h2>
+          <a href="/course">View All Course</a>
+        </div> */}
         {/* <img src={arrow} alt="arrow" /> */}
         <div className="card">
           <a
             href="#"
-            class="block max-w-sm p-6 bg-teal-500 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="block max-w-sm p-6 bg-white border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+            <h5 class="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+              Academic Excellence
             </h5>
-            <p class="font-normal text-black dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p class="font-normal text-xl text-black dark:text-gray-400">
+              Institutes focus on academic excellence by offering high-quality
+              education and rigorous academic programs. Our Institutes offer a
+              structured curriculum delivered through lectures, and practical
+              sessions. This instruction covers various subjects and disciplines
+              to impart knowledge and skills.
             </p>
           </a>
 
           <a
             href="#"
-            class="block max-w-sm p-6 bg-teal-500 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+            <h5 class="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+              Faculty and Staff
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p class="font-normal text-xl text-gray-700 dark:text-gray-400">
+              Institutes employ qualified faculty and staff members who are
+              experts in their respective fields. These educators deliver
+              lectures, mentor students, provide guidance, and assess academic
+              performance.
             </p>
           </a>
 
           <a
             href="#"
-            class="block max-w-sm p-6 bg-teal-500 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
           >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+            <h5 class="mb-2 text-2xl uppercase font-bold tracking-tight text-gray-900 dark:text-white">
+              Student-Centered Approach
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p class="font-normal text-xl text-gray-700 dark:text-gray-400">
+              Institutes prioritize the needs and well-being of students,
+              fostering a supportive and inclusive learning environment. They
+              offer personalized attention, small class sizes, and opportunities
+              for student engagement to ensure that every student receives
+              individualized support and guidance.
             </p>
           </a>
         </div>
-
-        <img className="img1" src={mainImg} alt="Main Pic" />
+        <motion.div
+          className="image"
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.4 }}
+        >
+          <img className="img1" src={img4} alt="Main Pic" />
+        </motion.div>
       </div>
       <div className=" second-main sm:h-auto mt-56">
         <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 4 }}
-          exit={{ opacity: 0 }}
-          transition={{ transition1 }}
+         variants={fadeIn("up", 0.4)}
+         initial="hidden"
+         animate={"show"}
           className="aboutHome"
         >
           <div className="container flex flex-col md:flex-row items-center">
@@ -103,10 +131,10 @@ const HeroSection = () => {
             </div>
             <div className="right row md:w-1/2 p-4 ">
               <motion.div
-                initial={{ opacity: 0, y: "-100%" }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: "-50%" }}
-                transition={{ transition1 }}
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                animate={"show"}
+                
               >
                 {/* <Heading subtitle='LEARN ANYTHING' title='Benefits About Online Learning Expertise' /> */}
                 <h6 className="text-3xl md:text-3xl text-teal-500 font-bold">
@@ -116,12 +144,7 @@ const HeroSection = () => {
                   OF OUR INSTITUTION
                 </h3>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: "-100%" }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: "-100%" }}
-                transition={{ transition1 }}
-              >
+              <div>
                 <div className="items">
                   <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img mr-2 md:mr-4 mb-2 md:mb-0">
@@ -133,17 +156,15 @@ const HeroSection = () => {
 
                     <div className="text">
                       <h2 className="text-lg md:text-xl font-semibold mb-1">
-                        Online Courses
+                        Practical Experience
                       </h2>
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts."
+                      "Practical experience, particularly through internships, is invaluable for students and professionals alike. It provides hands-on exposure to real-world scenarios, enhancing theoretical knowledge with practical skills and insights."
                       </p>
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
               <motion.div
                 initial={{ opacity: 0, y: "-100%" }}
                 animate={{ opacity: 1, y: 0 }}
@@ -151,7 +172,8 @@ const HeroSection = () => {
                 transition={{ transition1 }}
               >
                 <div className="items">
-                  <div className="item flexSB">
+                  <a href="/courses">
+                  <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img">
                       <img
                         src="https://img.icons8.com/dotty/80/000000/storytelling.png"
@@ -159,14 +181,13 @@ const HeroSection = () => {
                       />
                     </div>
                     <div className="text">
-                      <h2>Online Courses</h2>
+                      <h2 className="text-lg md:text-xl font-semibold mb-1"> 100% Placement Assurance </h2>
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts."
+                        "At IETI, we are dedicated to ensuring the success of our students. That's why we proudly offer a 100% placement assurance for qualified graduates in their relevant industries. "
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
               </motion.div>
               <motion.div
@@ -176,7 +197,7 @@ const HeroSection = () => {
                 transition={{ transition1 }}
               >
                 <div className="items">
-                  <div className="item flexSB">
+                  <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img">
                       <img
                         src="https://img.icons8.com/dotty/80/000000/storytelling.png"
@@ -184,11 +205,9 @@ const HeroSection = () => {
                       />
                     </div>
                     <div className="text">
-                      <h2>Online Courses</h2>
+                      <h2 className="text-lg md:text-xl font-semibold mb-1">Experienced Faculty</h2>
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts."
+                        "Our faculty members are distinguished experts in their respective fields, committed to ensuring the success of our students. Our faculty hold advanced degrees from prestigious institutions around the world. "
                       </p>
                     </div>
                   </div>
@@ -198,14 +217,7 @@ const HeroSection = () => {
           </div>
         </motion.section>
 
-        <motion.div
-          initial={{ opacity: 0, x: "-100%" }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: "-100%" }}
-          transition={{ transition1 }}
-        >
-          <Featured />
-        </motion.div>
+        <Featured />
 
         <Speciality />
         <div className="need-more-info bg-teal-500 h-auto rounded-lg p-8 shadow-md mt-8">
@@ -217,61 +229,16 @@ const HeroSection = () => {
             career, we can help. Request more information today.
           </p>
           <div className="flex justify-center text-xl">
-            <button className="mt-4  border-teal-500 text-teal-500 transform transition duration-500 hover:scale-110 bg-white  font-semibold py-2 px-4 w-52 h-16">
+            <a href="/contact" className="mt-4 text-center  border-teal-500 text-teal-500 transform transition duration-500 hover:scale-110 bg-white  font-semibold py-4 px-8 w-52 h-16" >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
 
         <Testimonal />
         <TopFaq />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:h-auto xl:h-auto">
-          <Carousel>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-            />
-          </Carousel>
-          <Carousel indicators={false}>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-            />
-          </Carousel>
-        </div>
+        <VisionAndMission />
 
         <Footer />
       </div>

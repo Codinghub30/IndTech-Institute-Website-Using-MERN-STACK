@@ -27,17 +27,20 @@ const Header = () => {
           <Navbar.Link as={Link} to="/feeStructure" className="navbar-link">
             Fees Structure
           </Navbar.Link>
-          <Navbar.Link as={Link} to="/about" className="navbar-link">
+          <Navbar.Link as={Link} to="/contact" className="navbar-link">
             Contact
           </Navbar.Link>
        
           <Dropdown label={<span style={{ fontSize: '130%' }}> Admission </span>} inline>
             <Dropdown.Item as={Link} to="/admission-criteria" className="text-lg">Admission Criteria</Dropdown.Item>
             <Dropdown.Item as={Link} to="/admission" className="text-lg">Admission Process</Dropdown.Item>
-            <Dropdown.Item className="text-lg">Apply</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/ApplyForAdmission" className="text-lg">Apply</Dropdown.Item>
          
             <Dropdown.Item as={Link} to="/course" className="text-lg">Courses</Dropdown.Item>
           </Dropdown>
+          <Navbar.Link as={Link} to="/placement" className="navbar-link">
+            Placement
+          </Navbar.Link>
           <Dropdown label={<span style={{ fontSize: '130%' }}> Others </span>} inline>
           
             <Dropdown.Item  as={Link} to="/StaffAndFaculty" className="text-lg">Faculty and Staff</Dropdown.Item>

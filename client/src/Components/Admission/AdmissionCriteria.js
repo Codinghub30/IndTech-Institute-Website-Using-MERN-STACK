@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import LeftSidebar from "../LeftSidebar";
 import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from "react-icons/hi";
 import admissionImg from "../../Pictures/admissionCriteria.jpg"
-import admission from "../../Pictures/admission.jpg"
+
 
 
 function AdmissionCriteria() {
@@ -107,7 +107,7 @@ function AdmissionCriteria() {
         </div>
       </div>
       <div className="" style={{marginTop:"-80px"}}>
-      <img src={admission} alt="img" />
+      {/* <img src={admission} alt="img" /> */}
       <Footer/>
       </div>
      

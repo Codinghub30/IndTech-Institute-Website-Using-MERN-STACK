@@ -37,7 +37,7 @@ const LeftSidebar = () => {
               <Sidebar.Item href="/topFAQ" icon={HiClipboardList}>
                 Top Faq
               </Sidebar.Item>
-              <Sidebar.Item href="#" icon={HiOutlineBookOpen}>Blog</Sidebar.Item>
+              <Sidebar.Item href="/placement" icon={HiOutlineBookOpen}>Placements</Sidebar.Item>
             
             </Sidebar.ItemGroup>
           </Sidebar.Items>

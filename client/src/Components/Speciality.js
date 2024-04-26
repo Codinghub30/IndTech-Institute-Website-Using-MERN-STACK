@@ -1,17 +1,28 @@
 import React from 'react';
 import { Card } from "flowbite-react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variant";
 
 const Featured = () => {
   return (
-    <div className="small-speciality bg-gray-100 h-auto md:h-fit cursor-pointer">
+    <div
+    className="small-speciality bg-gray-100 h-auto md:h-fit cursor-pointer">
     <div className="container mx-auto mt-8 md:mt-32 py-8 md:py-12 rounded-lg ml-4 md:ml-0 ">
       <h2 className="text-teal-500 font-bold text-center text-3xl md:text-5xl mt-8 md:mt-36 relative">
         <span className="side-left absolute left-0 h-0.5 w-6 md:w-12 bg-teal-500 "></span>
-        What We Provide
+        What  
+        <span className='text-teal-500'>We </span>
+        <span className='text-black'>Provide </span>
         <span className="side-right absolute right-0 h-0.5 w-6 md:w-12 bg-teal-500"></span>
+        
       </h2>
   
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8 md:mt-20">
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+       viewport={{once: false, amount: 0.4}}
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8 md:mt-20">
         <Card className="max-w-sm rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
           <div className="relative">
             <div className="absolute inset-0 bg-black opacity-25"></div>
@@ -55,14 +66,19 @@ const Featured = () => {
   
         {/* Card 3 */}
         <Card className="max-w-sm rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105">
-          <div className="relative">
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+           viewport={{once: false, amount: 0.4}}
+           className="relative">
             <div className="absolute inset-0 bg-black opacity-25"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <h5 className="text-white text-base md:text-xl font-bold z-10">
                 Innovations in Education 2021
               </h5>
             </div>
-          </div>
+          </motion.div>
           <div className="p-4 md:p-6">
             <p className="text-gray-700 text-sm md:text-base">
               Explore the latest innovations in education for the year 2021.
@@ -72,7 +88,7 @@ const Featured = () => {
             </button>
           </div>
         </Card>
-      </div>
+      </motion.div>
     </div>
   </div>
   
