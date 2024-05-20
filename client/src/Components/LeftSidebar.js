@@ -25,7 +25,7 @@ const LeftSidebar = () => {
               <Sidebar.Item
                 href="/admission-criteria"
                 icon={HiViewBoards}
-                label="Pro"
+                label="Details"
                 labelColor="dark"
               >
                 Admission Criteria
@@ -56,7 +56,7 @@ const LeftSidebar = () => {
               <Sidebar.Item
                 href="/gallery"
                 icon={HiCollection}
-                label="Pro"
+                label="Img"
                 labelColor="dark"
               >
                 Image Gallery

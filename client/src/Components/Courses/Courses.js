@@ -41,9 +41,12 @@ const Courses = [
     },
     { 
         id: 5, 
-        title: 'Safety Auditing and Consultancy', 
+        title: 'NEBOSH-RAW (Risk Assessment at Work)', 
         description: 'The "Safety Auditing and Consultancy" course is designed to equip participants with the necessary knowledge and skills to excel in the field of safety auditing and consultancy. The course spans over a period of 12 weeks, comprising both theoretical learning modules and practical hands-on training sessions. This comprehensive course covers a wide array of topics, including risk assessment methodologies, regulatory compliance frameworks, safety management systems, audit planning and execution, corrective action strategies, and effective communication in safety auditing processes.', 
-        image: 'https://www.totalika.org/wp-content/uploads/2017/12/safety-audit-1024x683.jpg' 
+        image: 'https://www.totalika.org/wp-content/uploads/2017/12/safety-audit-1024x683.jpg' ,
+        eligibility: "10th Board or Basic English",
+        board: "NEBOSH, UK",
+        duration: " The Duration of this course is: 1 Day"
     },
     { 
         id: 6, 

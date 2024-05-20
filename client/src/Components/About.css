@@ -54,6 +54,16 @@
     margin-left: 120px;
     gap: 220px;
   }
+  .container-testi{
+    display: flex;
+    margin-left: 20%;
+    gap: 4%;
+    width: 64%;
+    margin-right: 25px;
+  }
+  
+  
+
 
   @media only screen and (max-width: 600px) {
     .container{
@@ -66,11 +76,14 @@
       margin-left: -58px;
   }
   .container{
-    margin-top: 60px;
+    margin-left: -40px;
+    margin-top: -20px;
     flex-direction: column;
+
   }
   .right {
-    margin-left: -54px;
-    margin-top: -218px;
+    margin-top: 168%;
+    margin-left: 0px;
+
   }
   }

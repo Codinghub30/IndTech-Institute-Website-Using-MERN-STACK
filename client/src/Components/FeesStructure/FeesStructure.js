@@ -3,11 +3,13 @@ import React from 'react';
 const FeesStructure = ({ courses }) => {
   return (
     <div className="fees-structure ml-0">
-      <h2 className="fees-title text-4xl font-bold text-center mb-12 text-blue-900 relative mt-16">
-        <span className="line-left absolute left-0 h-0.5 w-12  bg-blue-900"></span>
-        Complete Fees Structure
-        <span className="line-right absolute right-0 h-0.5  bg-blue-900"></span>
-      </h2>
+     <h3 className=" text-center text-4xl">
+      <span className="line-left absolute left-0 h-0.5 w-32 bg-blue-900"></span>
+        Complete 
+        <span className="line-right absolute right-0 h-0.5 w-12 bg-blue-900"></span>
+      </h3>
+      
+      <h1 className=" text-teal-500 font-bold text-center mt-4 text-5xl"> Fees Structure</h1>
       <div className="fees-table ml-0 mt-24 grid grid-cols-4 cursor-pointer">
         <div className="fees-header fees-cell">Course Name</div>
         <div className="fees-header fees-cell">Duration</div>

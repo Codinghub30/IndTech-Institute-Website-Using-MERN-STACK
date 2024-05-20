@@ -5,6 +5,7 @@ import Featured from "./Featured";
 import Speciality from "./Speciality";
 import TopFaq from "./TopFaq";
 import Footer from "./Footer";
+import Testimonial from "./TestimonialMain";
 // import Slider from "react-slick";
 import "./About.css";
 
@@ -20,7 +21,7 @@ import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { fadeIn } from "../Variant";
 
-import Testimonal from "./Testimonial/Testimonial";
+// import Testimonal from "./Testimonial/Testimonial";
 
 // import mainImg from "../Pictures/png1.png.png";
 import VisionAndMission from "./VisionAndMission";
@@ -88,7 +89,7 @@ const HeroSection = () => {
               Institutes employ qualified faculty and staff members who are
               experts in their respective fields. These educators deliver
               lectures, mentor students, provide guidance, and assess academic
-              performance.
+              performance.  
             </p>
           </a>
 
@@ -146,6 +147,7 @@ const HeroSection = () => {
               </motion.div>
               <div>
                 <div className="items">
+                <a href="/testimonials">
                   <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img mr-2 md:mr-4 mb-2 md:mb-0">
                       <img
@@ -163,6 +165,7 @@ const HeroSection = () => {
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
               </div>
               <motion.div
@@ -172,7 +175,7 @@ const HeroSection = () => {
                 transition={{ transition1 }}
               >
                 <div className="items">
-                  <a href="/courses">
+                  <a href="/testimonials">
                   <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img">
                       <img
@@ -181,7 +184,7 @@ const HeroSection = () => {
                       />
                     </div>
                     <div className="text">
-                      <h2 className="text-lg md:text-xl font-semibold mb-1"> 100% Placement Assurance </h2>
+                      <h2 className="text-lg md:text-xl font-semibold mb-1"> 100% Placement Guidance </h2>
                       <p>
                         "At IETI, we are dedicated to ensuring the success of our students. That's why we proudly offer a 100% placement assurance for qualified graduates in their relevant industries. "
                       </p>
@@ -197,6 +200,7 @@ const HeroSection = () => {
                 transition={{ transition1 }}
               >
                 <div className="items">
+                <a href="/StaffAndFaculty">
                   <div className="item flex flex-col md:flex-row items-center mb-4">
                     <div className="img">
                       <img
@@ -211,6 +215,7 @@ const HeroSection = () => {
                       </p>
                     </div>
                   </div>
+                  </a>
                 </div>
               </motion.div>
             </div>
@@ -219,7 +224,7 @@ const HeroSection = () => {
 
         <Featured />
 
-        <Speciality />
+        {/* <Speciality /> */}
         <div className="need-more-info bg-teal-500 h-auto rounded-lg p-8 shadow-md mt-8">
           <h2 className="text-6xl mt-24 font-bold text-center mb-4 text-white">
             Need More Information?
@@ -235,7 +240,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <Testimonal />
+        <Testimonial />
         <TopFaq />
 
         <VisionAndMission />

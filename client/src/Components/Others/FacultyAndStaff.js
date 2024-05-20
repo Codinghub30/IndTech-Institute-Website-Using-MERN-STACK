@@ -63,18 +63,24 @@ const FacultyAndStaff = () => {
   return (
     <div>
       <Header />
+      <div  className="faculty-img">
+
       <img
         src={faculty}
         alt="Faculty and Staff Image is not loaded"
-        className=""
-        style={{ width: "100vw", height: "44vh" }}
+       className="img-facul"
+        
       />
+      </div>
 
-      <div className=" overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
+      <div className="faculty-line overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
         <h1 className="text-3xl font-bold">Faculty and Staff</h1>
       </div>
       <div className="flex mt-16 ml-16">
+        <div className="sidebar-faculty">
+
         <LeftSidebar />
+        </div>
 
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

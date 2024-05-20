@@ -7,7 +7,7 @@ const VisionAndMission = () => {
         
          <section className="py-12 bg-white">
         <div className="">
-          <div className="" style={{width:"60%", height:"41%", marginLeft: "29%"}}>
+          <div className="visionAndMission">
           <img src={mvv} alt='not valid' />
           </div>
         </div>

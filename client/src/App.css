@@ -170,7 +170,7 @@
   }
 
   .line-left {
-    left: 39%;
+    left: 36%;
   }
 
   .line-right {
@@ -251,9 +251,98 @@
 .admission-content{
   margin-top: 3%;
 
+
+}
+/* About */
+.about-details{
+  margin-top: 40px;
+  flex-direction: row;
+  margin-left: -300px;
+  width: 25%;
+
+ }
+ .img-director{
+  width: 35%;
+ }
+ .para2{
+  width: 105%;
+ }
+ .para3{
+  width: 198%;
+ }
+/* TopFaq */
+.img-Topfaq{
+  width: 40vw;
+  height: 38vh;
+  margin-left: 30%;
+}
+.overlay-Topfaq{
+  width: 109%;
+}
+/* Placement */
+
+.placement-img{
+  width: 44vw;
+  height: 39vh;
+  margin-left: 28%;
 }
 
+/* contact  */
+.img-contact{
+  width: 30vw;
+  height: 44vh;
+  margin-left: 35%;
+}
+.foot{
+  margin-top: 180px;
+  height: 50vh;
 
+
+}
+.visionAndMission{
+  width: 60%;
+  height: 41%;
+  margin-left: 29%;
+
+}
+/* course */
+.course-img{
+  width: 83vw;
+  height: 44vh;
+  margin-left: 8%;
+ }
+/* Apply  */
+.apply-img{
+  
+  width: 34vw;
+  height: 46vh;
+  margin-left: 36%;
+}
+ /* faculty */
+ .faculty-line{
+  margin-top: 5%;
+ 
+}
+
+/* gallery */
+.carousel2{
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 10%;
+  width: 50%;
+
+}
+.carousel1{
+  margin-top: 12%;
+  margin-left: 25%;
+  width: 50%;
+
+}
+
+.container-gallery{
+  width: 110%;
+  height: 21vh; 
+}
   
 
 
@@ -271,7 +360,146 @@
   animation: slideInFromBottom 1s ease-out;
 }
 
+@media(max-width: 900px){
+  .foot{
+    margin-left: -37px;
+    height: 128vh;
+    width: 121%;
+
+
+  }
+
+}
+
 @media (max-width: 900px) {
+  .custom-ul{
+    position: relative;
+    background-color: #fdfafa;
+    margin-left: 9vw;
+    z-index: 1;
+  }
+  .main{
+    width: 111%;
+    height: 46vh;
+
+  }
+ .visionAndMission{
+  width: 83%;
+  margin-left: 46px;
+ }
+ /* carousel image */
+ .carousel-img{
+  display: contents;
+  margin-top: 90%;
+ }
+
+ /* placement */
+ .placement-content{
+  width: 34vw;
+    height: 46vh;
+    margin-left: 36%;
+ }
+ .overlay-line{
+  width: 109%;
+ }
+
+
+ /* About */
+#about{
+  width: 110%;
+}
+.para2{
+  width: 384%;
+
+}
+.para3{
+  width: 379%;
+
+}
+
+.about-details{
+margin-left: 0%;
+  flex-direction: column;
+  width: 25%;
+
+ }
+
+ .img-director{
+  width: 105%;
+ }
+.carousal1{
+  width: 100vw;
+  
+}
+ /* Gallery */
+ .carousel1 {
+  margin-top: 45%;
+  margin-left: 8%;
+  width: 85%;
+}
+.carousel2 {
+  margin-top: -20%;
+  margin-left: 8%;
+  width: 85%;
+}
+ /* footer */
+ .about-footer{
+  margin-left: 35px;
+ }
+ .social-footer{
+  margin-left: 28%;
+
+ }
+
+ .contact-footer{
+  margin-top: 10px;
+  margin-left: 35px;
+ }
+
+ /* course */
+ .overlay-alpha{
+  margin-top: -156px;
+  margin-left: 20px;
+
+ }
+ .course-content{
+  width: 138%;
+  margin-left: -43px;
+ }
+ .course-img{
+  width: 105vw;
+  height: 40vh;
+  margin-left: 5%;
+
+ }
+ .container-course{
+  margin-left: 51px;
+  margin-top: -11px;
+ }
+ .course-list{
+  width: 79%;
+  margin-left: 57px;
+  gap: 61px;
+
+ }
+
+ .contact-content {
+  flex-direction: column;
+ }
+ .img-contact {
+  width: 75vw;
+  height: 42vh;
+  margin-left: 17%;
+
+ }
+ .form{
+  margin-left: -207px;
+
+ }
+ .location{
+  margin-left: -24px;
+
+ }
   .card{
     display: flex;
     flex-direction: column;
@@ -289,25 +517,24 @@
     width: 109%;
   }
   .small-speciality{
-    width:"109%";
+    width:109%;
   }
   .small-faq{
-     width: "109%" 
+     width: 109% 
   }
   .small-footer{
-    width: "109%" 
+    width: 109% 
  }
 
   .small-screen{
     flex-direction: column;
-    
-    width: 100%;
+    width: 202%;
   }
  
-  .featured-container{
-    margin-top: -6px;
-
-  }
+  .featured-container {
+    margin-top: -39px;
+    margin-left: -43px;
+}
   .custom-inner{
     width: 100vw;
   }
@@ -324,30 +551,107 @@
     margin-top: -6px;
 
   }
+  /* TopFaq */
+  .img-Topfaq{
+    width: 81vw;
+    height: 28vh;
+    margin-left: 15%;
+    margin-top: 23%;
+  }
+
+  /* faculty and staff */
+  .faculty-line{
+    width: 109%;
+    margin-top: -125px;
+  }
+  .faculty-img{
+    width: 108vw;
+  
+  }
+  .img-facul{
+    height: 35vh;
+  }
+  
+  /* placement */
+.footer-placement{
+  margin-top: 301%;
+  
+  }
+ 
+  .placement-img{
+    width: 90vw;
+    height: 39vh;
+    margin-left: 12%;
+
+  }
+  .placement-content{
+    flex-direction: column;
+  }
+  /* apply */
+  .apply-img{
+        width: 48vw;
+    height: 34vh;
+    margin-left: 23%;
+  }
+  .content-apply{
+    margin-left:    -22px;
+  }
   .admission-criteria{
     flex-direction: column;
     margin-top: -85px;
   }
   .admission-link{
-    margin-top: 17px;
-    margin-left: 70px;
+  display: none;
   }
-  .admission-link2{
+  /* .admission-link2{
     display: flex;
     margin-top: -18px;
-  }
+  } */
   .admission-content{
     margin-top: 60%;
    
 
   }
+
+  /* sidebar course */
+  .sidebar-course{
+    display: none;
+  }
+
+  /* adimission process */
+    .admission-process{
+      margin-left: -156px;
+    }
+  /* Sidebar admission Process */
+  .sidebar-admissionProcess{
+    display: none;
+  }
+  /* Sidebar Top faq */
+  .left-sidebar {
+    display: none;
+  }
+  /* Sidebar Admission */
+  .admission-link2{
+    display: none;
+  }
+
+  /* sidebar apply  */
+  .sidebar-apply{
+    display: none;
+  }
+  /* sidebar faculty */
+  .sidebar-faculty{
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
+  
   .line-left,
   .line-right {
-    margin-top: 53px;
-    margin-left: 64px;
+    margin-top: 47px;
+    margin-left: 9px;
     height: 3px;
+
   }
 }

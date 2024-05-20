@@ -26,11 +26,11 @@ function SidebarTopFAQ() {
     },
     {
       question: "What diplomas do you offer?",
-      answer: "We offer a range of diploma programs in various fields such as engineering, computer science, business administration, healthcare, and more. Please visit our Programs page for a complete list.",
+      answer: "We offer a range of diploma programs in various fields such as Lab Technician, Diploma in meterial Mangement and fire and Safety management etc. Please visit our Course page for a complete list.",
     },
     {
       question: "How do I apply for admission?",
-      answer: "To apply for admission, you can fill out the online application form available on our website. After submitting your application, you may need to provide additional documents such as transcripts and test scores. Our admissions team will guide you through the process.",
+      answer: "To apply for admission, you can fill out the online application form available on our website. After submission our admissions team will guide you through the process.",
     },
 
     {
@@ -69,15 +69,15 @@ function SidebarTopFAQ() {
       <img
           src={faq}
           alt="FAQ Image is not loaded "
-          className="" style={{width:"40vw", height:"38vh", marginLeft:"30%"}}
+          className="img-Topfaq" 
         />
         
-        <div className=" overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
+        <div className="overlay-Topfaq overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
           <h1 className="text-3xl font-bold">Frequently Asked Question</h1>
         </div>
       <div className="min-h-screen bg-gray-100 flex gap-12 mt-12">
         {/* Left Sidebar */}
-        <div className="ml-20 mt-20  ">
+        <div className="left-sidebar ml-20 mt-20  ">
           <LeftSidebar />
         </div>
 

@@ -10,7 +10,7 @@ const CourseDetails = () => {
   const course = Courses.find((course) => course.id === parseInt(id));
 
   if (!course) {
-    return <div>Course not found</div>;
+    return <div>Course not found</div>
   }
 
   return (
@@ -21,16 +21,19 @@ const CourseDetails = () => {
         <img
           src={course.image}
           alt="Admission Image"
-          className=""
-          style={{ width: "83vw", height: "44vh", marginLeft: "8%" }}
+          className="course-img"
+       
         />
 
-        <div className=" overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
+        <div className="overlay-alpha overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
           <h1 className="text-3xl font-bold">{course.title}</h1>
         </div>
-        <div className="flex ml-24 mt-20 mr-44">
+        <div className=" course-content flex ml-24 mt-20 mr-44">
+          <div className="sidebar-course">
           <LeftSidebar />
-          <div className="flex flex-col ml-48 mt-16 mr-20 border border-gray-300 p-6 rounded-lg">
+
+          </div>
+          <div className=" container-course flex flex-col ml-0 mt-16 mr-20 border border-gray-300 p-6 rounded-lg" style={{width:"900%"}}>
             <label className="text-2xl font-bold ">Description:</label>
             <p className="mt-4 text-lg">{course.description}</p>
             <div className="bg-gray-100 rounded-md p-4 mt-6">

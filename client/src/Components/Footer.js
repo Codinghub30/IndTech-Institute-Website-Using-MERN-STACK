@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-teal-500 text-white py-12 2xl:h-96 sm:h-6xl mt-12" style={{height:"50vh"}}>
-      <div className="container mx-auto">
+    <footer className="foot bg-teal-500 text-white py-12 2xl:h-96 sm:h-6xl mt-12">
+      <div className="container-footer mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center md:text-left">
-            <h4 className="text-3xl font-bold mb-4">About Us</h4>
+          <div className="about-footer text-center md:text-left">
+            <h4 className=" text-3xl font-bold mb-4">About Us</h4>
             <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit nunc sed ipsum consectetur.</p>
           </div>
           <div className="text-center md:text-left">
@@ -22,13 +22,13 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-left">
             <h4 className="text-3xl font-bold mb-4">Follow Us</h4>
-            <div className="flex items-center space-x-4">
+            <div className="social-footer flex items-center space-x-4">
               <a href="#" className="text-lg">Facebook</a>
               <a href="#" className="text-lg">Twitter</a>
               <a href="#" className="text-lg">Instagram</a>
             </div>
           </div>
-          <div className="text-center md:text-left">
+          <div className="contact-footer text-center md:text-left">
             <h4 className="text-3xl font-bold mb-4">Contact Us</h4>
             <p className="text-lg">Address: AT & P.O.: PURBAKOTE, P.S.: KORAI, DIST: JAJPUR (ODISHA), PIN: 755022
 </p>

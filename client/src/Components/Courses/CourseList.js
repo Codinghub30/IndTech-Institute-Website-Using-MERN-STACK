@@ -5,12 +5,16 @@ const CourseList = ({ courses }) => {
   return (
     <div>
       <h2 className="text-5xl font-bold text-center mb-12 text-blue-900 relative mt-16">
-        <span className="line-left absolute left-0 h-0.5 w-32 bg-blue-900"></span>
-        Courses Offered
-        <span className="line-right absolute right-0 h-0.5 w-12 bg-blue-900"></span>
+    
       </h2>
+      <h3 className=" text-teal-500 font-bold text-center mt-20 text-5xl">
+      <span className="line-left absolute left-0 h-0.5 w-32 bg-blue-900"></span>
+        Courses 
+        <span className="line-right absolute right-0 h-0.5 w-12 bg-blue-900"></span>
+      </h3>
+      <h1 className="text-center text-4xl "> Offered</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-40 m-44 cursor-pointer">
+      <div className="course-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ml-40 m-44 cursor-pointer">
         {courses.map((course) => (
           <Link to={`/courses/${course.id}`} key={course.id}>
           <div

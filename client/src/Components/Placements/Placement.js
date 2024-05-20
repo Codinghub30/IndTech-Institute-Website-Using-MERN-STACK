@@ -47,10 +47,10 @@ const Placement = () => {
                 <img
           src={placement}
           alt="Admission Image"
-          className="" style={{width:"44vw", height:"39vh", marginLeft: "28%"}}
+          className="placement-img" 
         />
         
-        <div className=" overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
+        <div className="overlay-line overlay-text absolute bottom-4xl w-full bg-black  text-white text-center py-4">
           <h1 className="text-3xl font-bold">Placement</h1>
         </div>
           <div className="placement-content flex mt-44 h-96 ml-16 gap-32">
@@ -69,15 +69,18 @@ const Placement = () => {
                  </Card>
               ))}
           </div>
+          <div className='footer-placement'>
           <Footer />
-          <div className="company-logos">
+
+          </div>
+          {/* <div className="company-logos">
               <h2>Our Partner Companies</h2>
               <div className="company-logo-list">
                   {placementData.map((student) => (
                       <CompanyLogo key={student.company.id} company={student.company} />
                   ))}
               </div>
-          </div>
+          </div> */}
       </div>
   );
 }

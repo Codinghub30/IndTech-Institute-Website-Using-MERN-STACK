@@ -18,6 +18,7 @@ import Blog from './Components/Others/Blog';
 import CourseDetails from './Components/Courses/CourseDetails';
 import Contact from './Components/Contact';
 import Placement from './Components/Placements/Placement';
+import Testimonal from './Components/Testimonial/Testimonial';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Route path="/StaffAndFaculty" element={<FacultyAndStaff/>}  />
       <Route path="/ApplyForAdmission" element={<Apply/>}  />
       <Route path="/placement" element={<Placement/>}  />
+      <Route path="/testimonials" element={<Testimonal/>}  />
     
     </Routes>
 
